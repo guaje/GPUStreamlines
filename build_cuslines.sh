@@ -13,6 +13,8 @@ cmake -DCMAKE_INSTALL_PREFIX=${install_dir} \
       -DCMAKE_C_COMPILER=gcc \
       -DCMAKE_CXX_COMPILER=g++ \
       -DPYTHON_EXECUTABLE=$(which python) \
+      -DCMAKE_CUDA_ARCHITECTURES=75 \
+      #-DCUDA_COMPUTE_CAPABILITY=75 \
       ..
 
 # compile
